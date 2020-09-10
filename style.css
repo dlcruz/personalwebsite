@@ -4,6 +4,7 @@
 body{
     margin:0;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(219, 234, 241);
 }
 
 * {
@@ -19,6 +20,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
+
+/* Header */
 header{
     position: absolute;
     left:0px;
@@ -28,6 +31,7 @@ header{
 }
 header .row{
     justify-content: space-between;
+    background-color: rgb(219, 234, 241);
 }
 header .brand-name a{
     text-decoration: none;
@@ -74,8 +78,9 @@ header .navbar ul li a.active::before{
     left: 0px;
 }
 
+/* Home */
 .home{
-    min-height: 100vh;
+    min-height: 50vh;
     background-image: url("images/cartoon_noelia.jpg");
     background-size: cover;
     background-position: center;
@@ -144,4 +149,40 @@ header .navbar ul li a.active::before{
 .home .home-content .block .cv-btn a:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+}
+
+/*About me*/
+
+.about-me{
+    padding: 50px 15px;
+}
+
+.about-me .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-me .section-title h1{
+    display: inline-block;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: 0 0 5px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.about-me .section-title h1:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    right: 20%;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+}
+
+.text-uppercase{
+    text-transform: uppercase!important;
 }
